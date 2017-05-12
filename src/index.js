@@ -625,10 +625,7 @@ export default class extends Component {
     }
 
     return (
-      <View style={[styles.container, {
-        width: state.width,
-        height: state.height
-      }]}>
+      <View style={this.props.styleContainer}>
         {this.renderScrollView(pages)}
         {props.showsPagination && (props.renderPagination
           ? this.props.renderPagination(state.index, state.total, this)
